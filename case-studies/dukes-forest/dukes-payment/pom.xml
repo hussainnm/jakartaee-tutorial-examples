@@ -16,12 +16,12 @@
 
     
     <parent>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <artifactId>dukes-forest</artifactId>
         <version>8.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>dukes-payment</artifactId>
     <packaging>war</packaging>
 

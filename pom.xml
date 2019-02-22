@@ -51,11 +51,11 @@
         <maven.exec.plugin.version>1.2.1</maven.exec.plugin.version>
         <junit.version>4.11</junit.version>
         <eclipselink.version>2.5.0</eclipselink.version>
-        <jakartaee.embedded.version>4.0</jakartaee.embedded.version>
+        <glassfish.embedded.version>4.0</glassfish.embedded.version>
         <cargo.plugin.version>1.4.4</cargo.plugin.version>
-        <jakartaee.domain.name>domain1</jakartaee.domain.name>
-        <jakartaee.home>${jakartaee.home.prefix}/jakartaee5</jakartaee.home>
-        <integration.container.id>jakartaee4x</integration.container.id>
+        <glassfish.domain.name>domain1</glassfish.domain.name>
+        <glassfish.home>${glassfish.home.prefix}/glassfish5</glassfish.home>
+        <integration.container.id>glassfish4x</integration.container.id>
         <maven.deploy.skip>true</maven.deploy.skip>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <maven.source.skip>true</maven.source.skip>
@@ -71,8 +71,8 @@
                 </os>
             </activation>
             <properties>
-                <jakartaee.home.prefix>c:/</jakartaee.home.prefix>
-                <jakartaee.executables.suffix>.bat</jakartaee.executables.suffix>
+                <glassfish.home.prefix>c:/</glassfish.home.prefix>
+                <glassfish.executables.suffix>.bat</glassfish.executables.suffix>
             </properties>
         </profile>
         <profile>
@@ -83,8 +83,8 @@
                 </os>
             </activation>
             <properties>
-                <jakartaee.home.prefix>${user.home}</jakartaee.home.prefix>
-                <jakartaee.executables.suffix />
+                <glassfish.home.prefix>${user.home}</glassfish.home.prefix>
+                <glassfish.executables.suffix />
             </properties>
         </profile>
         <profile>
@@ -93,7 +93,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <jakartaee.home>${basedir}/../../../</jakartaee.home>
+                <glassfish.home>${basedir}/../../../</glassfish.home>
             </properties>
         </profile>
         <profile>
@@ -104,14 +104,14 @@
                 </file>
             </activation>
             <properties>
-                <jakartaee.home>${jakartaee.home.prefix}/jakartaee5</jakartaee.home>
+                <glassfish.home>${glassfish.home.prefix}/glassfish5</glassfish.home>
             </properties>
         </profile>
         <profile>
             <id>standalone</id>
             <properties>
-                <jakartaee.home>${basedir}/target/cargo/installs/jakartaee</jakartaee.home>
-                <cargo.maven.containerUrl>http://dlc.sun.com.edgesuite.net/jakartaee/4.0/promoted/latest-jakartaee.zip</cargo.maven.containerUrl>
+                <glassfish.home>${basedir}/target/cargo/installs/glassfish</glassfish.home>
+                <cargo.maven.containerUrl>http://dlc.sun.com.edgesuite.net/glassfish/4.0/promoted/latest-glassfish.zip</cargo.maven.containerUrl>
             </properties>
         </profile>
     </profiles>
@@ -195,13 +195,13 @@
                     <container>
                         <containerId>${integration.container.id}</containerId>
                         <type>installed</type>
-                        <home>${jakartaee.home}</home>
+                        <home>${glassfish.home}</home>
                     </container>
                     <configuration>
                         <type>existing</type>
-                        <home>${jakartaee.home}/jakartaee/domains</home>
+                        <home>${glassfish.home}/glassfish/domains</home>
                         <properties>
-                            <cargo.jakartaee.domain.name>${jakartaee.domain.name}</cargo.jakartaee.domain.name>
+                            <cargo.glassfish.domain.name>${glassfish.domain.name}</cargo.glassfish.domain.name>
                             <!--cargo.remote.username></cargo.remote.username-->
                             <cargo.remote.password />
                         </properties>
@@ -229,7 +229,7 @@
                         <exclude>**/WEB-INF/**</exclude>
                         <exclude>**/nbactions.xml</exclude>
                         <exclude>**/nb-configuration.xml</exclude>
-                        <exclude>**/jakartaee-resources.xml</exclude>
+                        <exclude>**/glassfish-resources.xml</exclude>
                         <exclude>**/simple-flow-flow.xml</exclude>
                     </excludes>
                 </configuration>

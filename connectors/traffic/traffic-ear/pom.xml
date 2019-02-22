@@ -13,14 +13,14 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>traffic-ear</artifactId>
     <packaging>ear</packaging>
     <name>traffic-ear</name>
 	
     <parent>
         <artifactId>traffic</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
 
@@ -35,17 +35,17 @@
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <modules>
                         <ejbModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>traffic-ejb</artifactId>
                             <bundleFileName>traffic-ejb.jar</bundleFileName>
                         </ejbModule>
                         <rarModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>traffic-rar</artifactId>
                             <bundleFileName>traffic-rar.rar</bundleFileName>
                         </rarModule>
                         <webModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>traffic-war</artifactId>
                             <bundleFileName>traffic-war.war</bundleFileName>
                         </webModule>

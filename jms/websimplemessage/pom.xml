@@ -16,11 +16,11 @@
 
     <parent>
         <artifactId>jms</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>websimplemessage</artifactId>
     <packaging>war</packaging>
 

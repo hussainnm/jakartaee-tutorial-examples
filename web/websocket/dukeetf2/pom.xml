@@ -16,11 +16,11 @@
    
     <parent>
         <artifactId>websocket</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
     
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>dukeetf2</artifactId>
     <packaging>war</packaging>
     

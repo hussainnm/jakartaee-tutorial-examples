@@ -13,7 +13,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>cart-secure-ear</artifactId>
     <packaging>ear</packaging>
 
@@ -21,7 +21,7 @@
 
     <parent>
         <artifactId>cart-secure</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
 
@@ -36,12 +36,12 @@
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <modules>
                         <ejbModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>cart-secure-ejb</artifactId>
                             <bundleFileName>cart-secure-ejb.jar</bundleFileName>
                         </ejbModule>
                         <appClientModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>cart-secure-appclient</artifactId>
                         </appClientModule>
                     </modules>

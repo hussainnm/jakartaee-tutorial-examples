@@ -15,10 +15,10 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>case-studies</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>dukes-tutoring</artifactId>
     <packaging>pom</packaging>
     <name>dukes-tutoring</name>

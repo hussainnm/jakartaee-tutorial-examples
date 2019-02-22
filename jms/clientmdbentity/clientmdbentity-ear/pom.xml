@@ -16,11 +16,11 @@
 
     <parent>
         <artifactId>clientmdbentity</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>clientmdbentity-ear</artifactId>
     <packaging>ear</packaging>
 
@@ -54,11 +54,11 @@
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <modules>
                         <ejbModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>clientmdbentity-ejb</artifactId>
                         </ejbModule>
                         <appClientModule>
-                            <groupId>org.glassfish.javaeetutorial</groupId>
+                            <groupId>jakarta.tutorial</groupId>
                             <artifactId>clientmdbentity-appclient</artifactId>
                         </appClientModule>
                     </modules>

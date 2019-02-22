@@ -14,12 +14,12 @@
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <artifactId>web</artifactId>
         <version>8.1-SNAPSHOT</version>
     </parent>
    
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>servlet</artifactId>
     <packaging>pom</packaging>
  

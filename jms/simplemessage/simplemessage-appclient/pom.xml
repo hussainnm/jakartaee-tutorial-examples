@@ -15,11 +15,11 @@
     
     <parent>
         <artifactId>simplemessage</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
+        <groupId>jakarta.tutorial</groupId>
         <version>8.1-SNAPSHOT</version>
     </parent>
     
-    <groupId>org.glassfish.javaeetutorial</groupId>
+    <groupId>jakarta.tutorial</groupId>
     <artifactId>simplemessage-appclient</artifactId>
     <packaging>app-client</packaging>
 
@@ -27,7 +27,7 @@
     
     <dependencies>
         <dependency>
-            <groupId>org.glassfish.javaeetutorial</groupId>
+            <groupId>jakarta.tutorial</groupId>
             <artifactId>simplemessage-ejb</artifactId>
             <version>${project.version}</version>
         </dependency>
