@@ -1,7 +1,7 @@
 ## Pre requisites
 
 - Maven
-- JDK8+
+- JDK8
 - GlassFish 5
 
 ## Build the examples
