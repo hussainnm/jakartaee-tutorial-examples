@@ -36,7 +36,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javaee.api.version>8.0</javaee.api.version>
+        <jakartaee.api.version>8.0.0</jakartaee.api.version>
         <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
         <maven.source.plugin.version>2.2.1</maven.source.plugin.version>
         <maven.clean.plugin.version>2.5</maven.clean.plugin.version>
@@ -50,9 +50,9 @@
         <maven.release.plugin.version>2.5.2</maven.release.plugin.version>
         <maven.exec.plugin.version>1.2.1</maven.exec.plugin.version>
         <junit.version>4.11</junit.version>
-        <eclipselink.version>2.5.0</eclipselink.version>
-        <glassfish.embedded.version>4.0</glassfish.embedded.version>
-        <cargo.plugin.version>1.4.4</cargo.plugin.version>
+        <eclipselink.version>2.7.4</eclipselink.version>
+        <glassfish.embedded.version>5.1.0</glassfish.embedded.version>
+        <cargo.plugin.version>1.7.7</cargo.plugin.version>
         <glassfish.domain.name>domain1</glassfish.domain.name>
         <glassfish.home>${glassfish.home.prefix}/glassfish5</glassfish.home>
         <integration.container.id>glassfish4x</integration.container.id>
@@ -111,7 +111,6 @@
             <id>standalone</id>
             <properties>
                 <glassfish.home>${basedir}/target/cargo/installs/glassfish</glassfish.home>
-                <cargo.maven.containerUrl>http://dlc.sun.com.edgesuite.net/glassfish/4.0/promoted/latest-glassfish.zip</cargo.maven.containerUrl>
             </properties>
         </profile>
     </profiles>
@@ -131,21 +130,6 @@
         <module>security</module>
         <module>web</module>
     </modules>
-
-    <repositories>
-        <repository>
-            <id>snapshot-repository.java.net</id>
-            <name>Java.net Snapshot Repository for Maven</name>
-            <url>https://maven.java.net/content/repositories/staging/</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>releases-repository.java.net</id>
-            <name>Java.net releases Repository for Maven</name>
-            <url>https://maven.java.net/content/repositories/releases/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
 
     <build>
         <pluginManagement>
@@ -256,9 +240,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>${javaee.api.version}</version>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>${jakartaee.api.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
