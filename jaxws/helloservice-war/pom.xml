@@ -52,7 +52,7 @@
                     <deployables>
                         <deployable>
                         <properties>
-                            <context>helloservice</context>
+                            <context>helloservice-war</context>
                         </properties>
                         </deployable>
                     </deployables>
