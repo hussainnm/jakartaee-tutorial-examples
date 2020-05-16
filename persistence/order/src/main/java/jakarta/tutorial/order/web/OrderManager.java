@@ -24,8 +24,8 @@ import jakarta.tutorial.order.entity.CustomerOrder;
 import jakarta.tutorial.order.entity.LineItem;
 import jakarta.tutorial.order.entity.Part;
 import javax.ejb.EJB;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped;
 import javax.faces.component.UIParameter;
 import javax.faces.event.ActionEvent;
 
@@ -34,8 +34,8 @@ import javax.faces.event.ActionEvent;
  *
  * @author ian
  */
-@ManagedBean
 @SessionScoped
+@Named
 public class OrderManager implements Serializable{
     private static final long serialVersionUID = 2142383151318489373L;
     @EJB
@@ -317,7 +317,7 @@ public class OrderManager implements Serializable{
     private void clearSelected() {
         this.setSelectedPartNumber(null);
         this.setSelectedPartRevision(0);
-        this.setSelectedVendorPartNumber(new Long(0));
+        this.setSelectedVendorPartNumber(0L);
     }
 
     /**
