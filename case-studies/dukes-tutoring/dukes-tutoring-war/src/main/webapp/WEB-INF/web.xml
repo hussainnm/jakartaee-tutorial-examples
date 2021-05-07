@@ -91,19 +91,4 @@
         <exception-type>javax.faces.application.ViewExpiredException</exception-type>
         <location>/index.xhtml</location>
     </error-page>
-    <data-source>
-        <description>Duke's Tutoring data source.</description>
-        <name>java:global/TutoringDataSource</name>
-        <class-name>org.apache.derby.jdbc.ClientDataSource</class-name>
-        <server-name>localhost</server-name>
-        <port-number>1527</port-number>
-        <database-name>tutoring</database-name>
-        <user>tutoring</user>
-        <password>app</password>
-        <property>
-            <name>connectionAttributes</name>
-            <value>;create=true</value>
-        </property>
-        <!--url>jdbc:derby://localhost:1527/tutoring;create=true</url-->
-    </data-source>
 </web-app>

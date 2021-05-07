@@ -76,7 +76,7 @@
     </security-constraint> 
     
     <data-source>
-        <name>java:global/ForestDataSource</name>
+        <name>java:app/ForestDataSource</name>
         <class-name>org.apache.derby.jdbc.ClientDataSource</class-name>
         <server-name>localhost</server-name>
         <port-number>1527</port-number>
