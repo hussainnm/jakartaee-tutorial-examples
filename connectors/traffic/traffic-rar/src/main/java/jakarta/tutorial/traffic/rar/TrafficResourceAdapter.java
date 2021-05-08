@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014, 2019 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2014, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -30,8 +30,8 @@ import javax.transaction.xa.XAResource;
 
 @Connector(
         displayName = "TrafficRA",
-        vendorName = "Java EE Tutorial", 
-        version = "7.0"
+        vendorName = "Jakarta EE Tutorial", 
+        version = "8.1"
 )
 public class TrafficResourceAdapter implements ResourceAdapter, Serializable {
     
